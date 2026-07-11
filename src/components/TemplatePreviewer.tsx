@@ -117,7 +117,9 @@ export default function TemplatePreviewer() {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    const url = window.location.origin + '?demo=' + template.id;
+                    const url = template.id === 'classic' || template.name.includes('A&A')
+                      ? 'https://aatransportasi.com'
+                      : window.location.origin + '?demo=' + template.id;
                     window.open(url, '_blank');
                   }}
                   title={language === 'id' ? `Buka Live Demo ${template.name}` : `Open Live Demo for ${template.name}`}
@@ -239,7 +241,9 @@ export default function TemplatePreviewer() {
             <div className="pt-6 border-t border-slate-100">
               <button
                 onClick={() => {
-                  const url = window.location.origin + '?demo=' + currentTemplate.id;
+                  const url = currentTemplate.id === 'classic' || currentTemplate.name.includes('A&A')
+                    ? 'https://aatransportasi.com'
+                    : window.location.origin + '?demo=' + currentTemplate.id;
                   window.open(url, '_blank');
                 }}
                 className="w-full bg-brand-primary hover:bg-brand-primary/95 text-white font-black text-xs uppercase tracking-wider py-4 rounded-xl flex items-center justify-center gap-2 shadow-md shadow-brand-primary/10 transition-all cursor-pointer hover:scale-[1.01]"

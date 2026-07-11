@@ -1,5 +1,6 @@
 import { Globe2, MessageSquare, Mail, MapPin, Sparkles, Phone } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import { Logo } from './Logo';
 
 interface FooterProps {
   onNavClick: (sectionId: string) => void;
@@ -18,11 +19,7 @@ export default function Footer({ onNavClick }: FooterProps) {
           {/* Logo & Bio Column */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3 cursor-pointer group" onClick={() => onNavClick('hero')}>
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary via-brand-secondary to-brand-accent flex items-center justify-center text-white transition-all duration-300 group-hover:scale-105 shadow-md">
-                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
+              <Logo className="w-10 h-10 flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="text-white font-sans text-xl font-black tracking-tight leading-none">
                   Tour<span className="text-brand-accent">Native</span>

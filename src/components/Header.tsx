@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Globe2, Sparkles, ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import { Logo } from './Logo';
 
 interface HeaderProps {
   onNavClick: (sectionId: string) => void;
@@ -49,18 +50,7 @@ export default function Header({ onNavClick, activeSection }: HeaderProps) {
             className="flex items-center gap-3 cursor-pointer group"
             onClick={() => handleItemClick('hero')}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary via-brand-secondary to-brand-accent flex items-center justify-center text-white transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-brand-secondary/20 shadow-md">
-              {/* Custom SVG logo representing a globe with travel path / native core */}
-              <svg 
-                className="w-5 h-5 text-white animate-pulse-slow" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor" 
-                strokeWidth="2.5"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-              </svg>
-            </div>
+            <Logo className="w-10 h-10 flex-shrink-0" />
             
             <div className="flex flex-col">
               <span className={`font-sans text-xl font-black tracking-tight leading-none transition-colors duration-300 ${
