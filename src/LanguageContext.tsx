@@ -22,7 +22,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.cta.short': 'Sewa Web',
 
     // Hero
-    'hero.promo': 'PROMO SEWA WEBSITE TRAVEL 2026',
+    'hero.promo': 'SEWA WEBSITE TRAVEL',
     'hero.subtitle': 'Sewa website siap pakai premium khusus agen travel, tour operator, dan rental mobil dari TourNative. Dilengkapi sistem booking otomatis, manajemen paket wisata, dan invoice digital otomatis.',
     'hero.badge.1.val': '1 Hari',
     'hero.badge.1.lbl': 'Siap Online',
