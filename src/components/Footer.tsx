@@ -75,15 +75,15 @@ export default function Footer({ onNavClick }: FooterProps) {
             <ul className="space-y-3.5 text-xs sm:text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-secondary shrink-0 mt-0.5" />
-                <span>Level 24, Premium Office Tower, Sudirman Central Business District, Jakarta, Indonesia.</span>
+                <span>Rempung, Lombok Timur, NTB.</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-brand-secondary shrink-0" />
-                <span>+62 812-3456-789</span>
+                <span>+6287788642932/span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-brand-secondary shrink-0" />
-                <span>support@tournative.com</span>
+                <span>support@tournative.xyz</span>
               </li>
 
             </ul>
