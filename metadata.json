@@ -1,0 +1,6 @@
+{
+  "name": "TourNative",
+  "description": "Layanan sewa website tour & travel siap pakai dengan sistem booking otomatis, manajemen paket wisata, dan desain premium.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
