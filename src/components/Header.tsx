@@ -61,7 +61,7 @@ export default function Header({ onNavClick, activeSection }: HeaderProps) {
               <span className={`text-[9px] font-mono tracking-[0.25em] uppercase transition-colors duration-300 mt-1.5 ${
                 isScrolled ? 'text-slate-400' : 'text-slate-300/80'
               }`}>
-                PREMIUM TRAVEL SITE
+                SEWA WEBSITE TRAVEL
               </span>
             </div>
           </div>
