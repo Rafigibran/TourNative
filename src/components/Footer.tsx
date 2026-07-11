@@ -95,14 +95,9 @@ export default function Footer({ onNavClick }: FooterProps) {
         <div className="border-t border-slate-900 pt-8 mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p className="text-slate-500">
             {language === 'id' 
-              ? `© ${currentYear} TourNative (PT TourNative Global Teknologi). Hak Cipta Dilindungi Undang-Undang.` 
-              : `© ${currentYear} TourNative (PT TourNative Global Technology). All Rights Reserved.`}
+              ? `© ${currentYear} TourNative. Hak Cipta Dilindungi Undang-Undang.` 
+              : `© ${currentYear} TourNative. All Rights Reserved.`}
           </p>
-          <div className="flex gap-6 text-slate-500">
-            <a href="#" className="hover:text-white">{language === 'id' ? 'Syarat Ketentuan' : 'Terms & Conditions'}</a>
-            <a href="#" className="hover:text-white">{language === 'id' ? 'Kebijakan Privasi' : 'Privacy Policy'}</a>
-            <a href="#" className="hover:text-white">SLA Server</a>
-          </div>
         </div>
 
       </div>
