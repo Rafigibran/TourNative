@@ -25,7 +25,7 @@ export default function Footer({ onNavClick }: FooterProps) {
                   Tour<span className="text-brand-accent">Native</span>
                 </span>
                 <span className="text-[9px] font-mono tracking-[0.25em] uppercase text-slate-500 mt-1.5">
-                  PREMIUM TRAVEL SITE
+                  SEWA WEBSITE TRAVEL
                 </span>
               </div>
             </div>
